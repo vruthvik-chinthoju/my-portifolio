@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-Spiders</title>
+    <style>
+        /* =========================
+   THEME VARIABLES
+========================= */
+        :root {
+            --bg: radial-gradient(circle at top, #0b0f2a, #07081a, #000);
+            --text: #ffffff;
+            --card: rgba(255, 255, 255, 0.1);
+            --icon: #ffffff;
+            --accent: #3b82f6;
+        }
+
+        .light {
+            --bg: #f4f6ff;
+            --text: #0b0f2a;
+            --card: rgba(0, 0, 0, 0.1);
+            --icon: #0b0f2a;
+        }
+
+        /* =========================
+   BASE
+========================= */
+        body {
+            margin: 0;
+            font-family: "Inter", sans-serif;
+            color: var(--text);
+            background: var(--bg);
+            position: relative;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        /* Background image overlay */
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background: url("./v907-aum-41.jpg") center / cover no-repeat;
+            opacity: 0.15;
+            z-index: -1;
+        }
+        .box img{
+            height: 500px;
+        }
+        .box{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1>Certificate</h1>
+        <img src="./WhatsApp Image 2026-02-04 at 10.37.07 AM (1).jpeg" alt="">
+        <h1>Team-mates</h1>
+        <img src="./WhatsApp Image 2026-02-04 at 10.37.07 AM.jpeg" alt="">
+        <h1>hello</h1>
+        <img src="./WhatsApp Image 2026-02-04 at 10.37.08 AM.jpeg" alt="">
+       <a href="https://firebasestorage.googleapis.com/v0/b/agentathon-hyd-25.firebasestorage.app/o/certificates%2FChvruthvik_certificate_5533.pdf?alt=media&token=5dfa6bfc-138f-4ba0-805e-fd3574911b7b">go</a>
+    </div>
+</body>
+
+</html>
