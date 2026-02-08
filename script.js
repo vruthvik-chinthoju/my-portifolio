@@ -51,8 +51,22 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   });
 });
-  window.addEventListener("load", () => {
-    setTimeout(() => {
+
+const launch = document.getElementById("launch");
+
+window.addEventListener("load", () => {
+  let count = 3;
+  const countdown = setInterval(() => {
+    launch.textContent = count > 0
+  ? `Preparing launch in ${count}...`
+  : "🚀 Ignition!";
+
+    count--;
+
+    if (count < 0) {
+      clearInterval(countdown);
+
+      launch.textContent = "Launching...";
       const loader = document.getElementById("loader");
       loader.style.opacity = "0";
       loader.style.pointerEvents = "none";
@@ -60,8 +74,9 @@ document.addEventListener("DOMContentLoaded", () => {
       setTimeout(() => {
         loader.style.display = "none";
       }, 500);
-    }, 2000); // 5 seconds
-  });
+    }
+  }, 1000); 
+});
 
 
 
