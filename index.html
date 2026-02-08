@@ -3,11 +3,11 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Full Stack Developer skilled in Python, Django, REST APIs, JavaScript, and scalable web applications.">
   <title>Ruthvik | Full Stack Developer</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
-  <link rel="shortcut icon" href="./satheeshsankaran-rocket-158.gif" type="image/x-icon">
+  <link rel="shortcut icon" href="./favicon.gif" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -253,9 +253,7 @@
 
       <!-- LEFT ILLUSTRATION -->
       <div class="education-left">
-        <img
-          src="./images/ed.webp"
-          alt="Education Illustration" id="small">
+        <img src="./images/ed.webp" alt="Education Illustration" id="small">
       </div>
 
       <!-- RIGHT CONTENT -->
@@ -339,8 +337,7 @@
                 collaboration
                 and execution. Contributed to a Guinness World Record–recognized achievement.
               </p>
-              <a href="./proof_hub.html"
-                target="_blank" style="color: rgb(13, 105, 55);font-weight: bolder;">To Know
+              <a href="./proof_hub.html" target="_blank" style="color: rgb(13, 105, 55);font-weight: bolder;">To Know
                 More</a>
             </div>
           </div>
@@ -570,8 +567,7 @@
           </div>
           <div class="edu-content">📸
             <span class="exp-tag">Photography</span>
-            <p><strong><a href="./proof_hub.html" target="_blank"
-                  style="color: orange;">To check out</a></strong></p>
+            <p><strong><a href="./proof_hub.html" target="_blank" style="color: orange;">To check out</a></strong></p>
             <p>Passionate about photography with a focus on composition, lighting, and emotion-driven visuals.</p>
           </div>
 
@@ -593,12 +589,16 @@
           Drop a message and I’ll get back to you soon.
         </p>
 
-        <form id="contact-form" class="contact-form">
+        <form id="contact-form" class="contact-form" name="contact" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="contact" />
+
           <input type="text" name="name" placeholder="Enter Your Name" required />
           <input type="email" name="email" placeholder="Enter Your Email" required />
-          <textarea name="message" required placeholder="Enter Your Message"></textarea>
+          <textarea name="message" placeholder="Enter Your Message" required></textarea>
+
           <button type="submit">Send Message</button>
         </form>
+
 
         <p id="form-status"></p>
 
@@ -608,23 +608,24 @@
   </section>
 
   <footer class="site-footer">
-  <div class="footer-inner">
-    <p class="footer-name">
-      Ruthvik · Full Stack & Backend Developer
-    </p>
+    <div class="footer-inner">
+      <p class="footer-name">
+        Ruthvik · Full Stack & Backend Developer
+      </p>
 
-    <div class="footer-links">
-      <a href="mailto:ruthvik.chinthujo@gmail.com?subject=Portfolio%20Contact&body=Hi%20Ruthvik,">Email</a>
-      <a href="https://github.com/vruthvik-chinthoju" target="_blank">GitHub</a>
-      <a href="https://www.linkedin.com/in/chinthoju-vruthvik-83754b320?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a>
-      <a href="./chinthoju_vruthvik_resume.pdf" target="_blank">Resume</a>
+      <div class="footer-links">
+        <a href="mailto:ruthvik.chinthujo@gmail.com?subject=Portfolio%20Contact&body=Hi%20Ruthvik,">Email</a>
+        <a href="https://github.com/vruthvik-chinthoju" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/chinthoju-vruthvik-83754b320?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          target="_blank">LinkedIn</a>
+        <a href="./chinthoju_vruthvik_resume.pdf" target="_blank">Resume</a>
+      </div>
+
+      <p class="footer-copy">
+        © 2026 Ruthvik. Built with purpose.
+      </p>
     </div>
-
-    <p class="footer-copy">
-      © 2026 Ruthvik. Built with purpose.
-    </p>
-  </div>
-</footer>
+  </footer>
 
 
   <aside class="social">
