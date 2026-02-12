@@ -13,7 +13,7 @@ window.addEventListener("load", () => {
       app.classList.add("show");
     }, 500);
 
-  }, 1000); // ⏳ loader duration
+  }, 2500); // ⏳ loader duration
 });
 
 
